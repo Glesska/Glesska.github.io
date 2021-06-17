@@ -1,37 +1,39 @@
+/* Font */
 @font-face {
-    font-family: "chakra";
-    src: url(../police/Supernatural_Knight.ttf);
+  font-family: "intro";
+  src: url(../police/Intro.otf);
 }
 
-@font-face {
-    font-family: "pentacle";
-    src: url(../police/CELTG___.TTF);
+
+h2 ,  h3  { 
+  font-family: "intro" !important;
+  
 }
 
-@font-face {
-    font-family: "shit";
-    src: url(../police/GeosansLight.ttf);
+button{ 
+  color: white;
+  background-color: black;
+  border-radius: 50em !important;
+  border: 3px solid #8639FE ;
+
 }
 
-.shit{
-    font-family: "shit";
-}
-.pentacle {
-    font-family: "pentacle";
+button:hover {
+  background-color:#8639FE; 
+  
 }
 
-.chakra {
-    font-family: "chakra";
-}
 
+/*Header */ 
 
 .bgBody {
-    background-color: rgb(93, 46, 70);
+   background-color: black;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 #navbarTop {
     z-index: 1000;
 }
@@ -42,36 +44,45 @@ a {
 }
 
 a:hover {
-    background-color: rgb(208, 173, 167, 0.5);
+    border-top: 3px solid #8639FE;
 }
 
-
-#overlayContainer {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
-}
 
 .hv-100 {
     height: 100vh;
 }
 
 
-#mountainContainer {
-    background-image: url(../images/montagne2.jpg);
+#pageArrivee {
+    background-image: url(../images/pageaccueildarck.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#photographerContainer {
 
+
+.baniere{ 
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+ width: 100%;
+ height: 31rem;
+}
+/* ----------------------------*/
+
+
+/*About Me */ 
+#about{
+  margin-top: 10rem;
+}
+#photographerContainer {
     height: 100%;
     width: 60%;
 }
 
 #photographer {
-    background-image: url(../images/photographe2.jpg);
+    background-image: url(../photographe2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -79,13 +90,120 @@ a:hover {
     width: 50%;
 
 }
+/* My Resume */
 
-#presentation {
-    width: 100%;
-    height: 60vh;
-    background-color: rgb(208, 173, 167, 0.2);
+.resume{ 
+  border-top:  30px solid white;
+  border-bottom: 30px solid white;
+  margin-top: 10rem;
+margin-bottom: 10rem;
+padding: 5rem;
 }
 
-.bgPurple {
-    background-color:rgb(181,141,182)!important;
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #CA26F1;
+    position: relative;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background:#CA26F1;
+    
+  }
+  
+/*Portfolio*/ 
+
+
+.blockImg{ 
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  
 }
+
+
+.photo{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  
+}
+.pictureDesign{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 40%;
+}
+.picturePhoto{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+
+/* ----------------------------*/
+
+  /*footer*/ 
+  footer{ 
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* ----------------------------*/
+
+  /*............Page PortFolio .................*/
+  #pagePortfolio{ 
+    background-image: url(../images/color.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
