@@ -16,32 +16,39 @@
 
 
 <body class="bgBody">
+
     <!--Header-->
-    <header>
+    <header id="pageArrivee" class="hv-100">
+        <nav class="navbar navbar-expand-lg" id="navbar">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-fixed w-100 " id="navbarTop">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link active" aria-current="page" href="#pageArrivee">Home</a>
-                        <a class="nav-link" href="#about">About Me</a>
-                        <a class="nav-link" href="#skills">Skills</a>
-                        <a class="nav-link" href="#resume">My Resume</a>
-                        <a class="nav-link" href="./portfolio.html">PortFolio </a>
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </div>
-                </div>
+            <button class="navbar-toggler buttonNav" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="navText" id="nav" aria-current="page" href="#pageArrivee">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navText" id="nav" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navText" id="nav" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navText" id="nav" href="#resume">Mon Résumé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navText" id="nav" href="./portfolio.html">Mes Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navText" id="nav" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
-
-
-        <div id="pageArrivee" class="hv-100"></div>
 
     </header>
     <!--Header-->
@@ -53,33 +60,41 @@
 
             <div>
 
-                <div class="baniere "> <img src="assets/images/banierre.jpg" alt="banniere A propo de moi "> </div>
 
-                <div class="rowd-flex justify-content-center">
+                <div class="row d-flex justify-content-center align-item-center">
+
+                    <div class="baniere "> <img src="assets/images/banierre.jpg" alt="banniere A propo de moi "> </div>
 
                     <div class="col-sm-12 col-md-4">
-                        <div id="photographerContainer" class="d-flex w-100 justify-content-center ">
+                        <div id="photographerContainer" class="d-flex w-100  ">
                             <div id="photographer"></div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 col-md-4 ">
+                    <div class="col-sm-12 col-md-4  d-flex flex-column justify-content-center text-justify  ">
                         <div class=" text-white ">
-                            <p> Moi c’est Manon Pradier néé dans l’an 2000 entre nature et numérique.
+                            <p> Moi, c’est Manon Pradier née dans l’an 2000, entre nature et numérique.
+                                Je suis originaire du sub-Ouest plus particulièrement de Dordogne.
+                                Je vadrouille dans toute la France.
 
-                                Mon cursus scolaire et simple mais trés riche en expérience.
-                                J’ai fais 5 ans de photographie dont 3 ans dans un lycée professionelle, à
-                                Bordeaux, puis 2 ans en BTS photographie, au Havre.
-                                Ces années on était trés enrichissante avec les stages proffesionelle. Je me suis
-                                tournée
-                                vers le web pour différente raisons mais principalement pour apprendre une nouvelle
-                                compétence qui pourrais compléter toute mes année de photographie. Toucher </p>
+                                Mon cursus scolaire est assez simple, mais très riche en expériences.
+                                J’ai fait 5 ans de photographies, dont 3 ans dans un lycée professionnel, à Bordeaux,
+                                puis 2 ans en BTS photographie, au Havre.
+                                Ces années, on était très enrichissante pour moi notamment avec les stages
+                                professionnelles à effectuer chaque année.
+                                Je me suis actuellement étudiante dans le web. Pourquoi me tourner vers cette voix ?
+                                Pour différentes raisons, mais principalement pour acquérir des nouvelles compétences,
+                                qui pourraient compléter toutes mes années de photographie. Et combiner les deux serait
+                                un plus dans le métier de la communication. </p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="baniere" id="skills"><img src="assets/images/banniere22.jpg" alt="baniere compétences "></div>
+                <div class="baniere mb-5" id="skills"><img src="assets/images/banniere22.jpg"
+                        alt="baniere compétences "></div>
 
+                <a class="m-5" href="assets/images/cv_Manon_Pradier.pdf" download>
+                    <button class="buttonPortfolio">Télécharger mon CV</button> </a>
             </div>
 
         </section>
@@ -91,11 +106,11 @@
         <section id="resume" class="resume text-white ">
             <div class="container">
                 <div class="section-title">
-                    <h2 class=" text-white text-center mt-5">My Resume</h2>
+                    <h2 class=" text-white text-center m-5">Mon Résumé</h2>
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="resume-item pb-0">
-                                <h3>Education</h3>
+                                <h3>éducation</h3>
                                 <p>
                                 <ul class="shit">
                                     <li> <b>Mars-Septembre-2021</b> - Formation Webdesigner et Communication
@@ -116,10 +131,10 @@
                             <div class="resume-item">
                                 <ul class="shit">
                                     <li><b>2021</b> - Bénévole à la Croix Rouge Française du Havre, secteur
-                                        communicationetvesti-boutique. 
+                                        communicationetvesti-boutique.
                                         - Faire la com photo pour les réseaux sociaux de la croix rouge du havre.</li>
                                     <li class="mt-3"><b>Décembre 2018 à Mai 2019</b> Reportage sur des mouvements
-                                        sociaux (Gilets Jaune.)
+                                        sociaux (Gilets jaunes).
                                         (Paris, Bordeaux, Le Havre). </li>
                                 </ul>
                             </div>
@@ -132,7 +147,8 @@
                                     <li><b> Juin-Juillet 2019</b> - ECPAD (Etablissement de Communication et
                                         Production
                                         Audiovisuelle de la Défense).
-                                        Service Photo. Reportage sur Défilés, Portraits Officiel, Cérémonie, 14 Juillet  (94,
+                                        Service Photo. Reportage sur Défilés, Portraits Officiel, Cérémonie, 14 Juillet
+                                        (94,
                                         Ivry-Sur-Seine).</li>
                                     <li class="mt-3"> <b>Octobre 2017</b> - Photographie immobilière pour un gîte,
                                         photo
@@ -148,14 +164,17 @@
                                     <li><b>Août-Septembre 2019</b> - AFP (Agence France Presse) Service Photo (
                                         publication
                                         sur
-                                        plusieurs médias voir Mes Réalisations). Mission : Festival, Actualitées de Paris. ( Paris 2e). </li>
+                                        plusieurs médias voir Mes Réalisations). Mission : Festival, Actualitées de
+                                        Paris. ( Paris 2e). </li>
                                     <li class="mt-3"><b>Janvier-Février 2018 et Mai 2019 </b> - L'Elysée, service
-                                        photo. Mission Servre de Président de la républic dans le palais et hors du Palais .
+                                        photo. Mission Servre de Président de la républic dans le palais et hors du
+                                        Palais .
                                         (Paris 8e) .</li>
                                     <li class="mt-3"><b>Septembre-Octobre 2017 </b> - Théâtre l'Odyssée au service
                                         Technique
                                         auprès des
-                                        régisseur lumière. Mission : Préparer les lumiere de la scene de théâtre. (24, Périgueux).</li>
+                                        régisseur lumière. Mission : Préparer les lumiere de la scene de théâtre. (24,
+                                        Périgueux).</li>
                                     <li class="mt-3"><b>Fin Juin 2017</b> - DUSHOW société de prestation
                                         audiovisuelle,
                                         préparation des
@@ -163,7 +182,8 @@
                                     <li class="mt-3"><b>Début Juin 2017</b> - CNEFG (Centre National d'Entraînement
                                         des
                                         Forces de
-                                        Gendarmerie) service photo. Mission : Photographie des exercices. (24,Saint-Astier). </lil>
+                                        Gendarmerie) service photo. Mission : Photographie des exercices.
+                                        (24,Saint-Astier). </lil>
                                     <li class="mt-3"><b> Novembre-Décembre 2016</b> - Journal Sud-Ouest au service
                                         photo. Mission: Photographier les actualitées de Bordeaux . (
                                         33 Bordeaux) .
@@ -179,34 +199,35 @@
         </section>
         <!--My Resume-->
         <!--Portfolio-->
-        <h2 class="text-center text-white"id="portfolio"  >Portfolio</h2>
+        <section>
+            <div id="portfolio" class="d-flex flex-row justify-content-center pb-5"><img class="picturePhoto"
+                    src="assets/images/photographie2.png" alt="partie photographie"></div>
 
-        <div class="d-flex flex-row justify-content-center pb-5"><img class="picturePhoto" src="assets/images/photographie2.png" alt="partie photographie"></div>
+            <section class="container-fluid blockImg ">
 
-        <section class="container-fluid blockImg ">
+                <div class="row picture d-flex flex-row justify-content-center ">
+                    <div class="col-4"> <img class="photo" src="assets/images/festival/majorlazer2.jpg"
+                            alt="photo de concert de major lazer lors du festival rock en seine"> </div>
 
-        <div class="row picture d-flex flex-row justify-content-center "> 
-            <div class="col-4"> <img class="photo" src="assets/images/festival/majorlazer2.jpg"
-                    alt="photo de concert de major lazer lors du festival rock en seine"> </div>
+                    <div class="col-4"> <img class="photo" src="assets/images/manif/manif6.JPG"
+                            alt="photo d'un homme sur sont velo lors d'un manisfestation gilets jaune à Paris "></div>
 
-            <div class="col-4"> <img class="photo" src="assets/images/manif/manifparis4.JPG"
-                    alt="photo d'un homme sur sont velo lors d'un manisfestation gilets jaune à Paris "></div>
+                    <div class="col-4"><img class="photo" src="assets/images/14juillets/fetenational1.jpg"
+                            alt="Un homme de la marine lors du passage des avions au 14 Juilletes "></div>
 
-            <div class="col-4"><img class="photo" src="assets/images/14juillets/fetenational1.jpg"
-                    alt="Un homme de la marine lors du passage des avions au 14 Juilletes "></div>
 
-            <div><img src="" alt=""> </div>
-        </div>
 
+            </section>
         </section>
 
 
 
 
+        <div class="d-flex flex-row justify-content-center pt-5 pb-5 i"><a href="./portfolio.html">
+                <button class="buttonPortfolio" type="button">Voir Plus</button></a></div>
 
-        <div class="d-flex flex-row justify-content-center pt-5 pb-5"><a href="./portfolio.html"><button type="button">Voir Plus</button></a></div>
-
-        <div class="d-flex flex-row justify-content-center pb-5"><img class="pictureDesign" src="assets/images/design2.png" alt="partie design "></div>
+        <div class="d-flex flex-row justify-content-center pb-5"><img class="pictureDesign"
+                src="assets/images/design2.png" alt="partie design "></div>
 
 
 
@@ -215,20 +236,21 @@
 
         <section class="container-fluid blockImg">
 
-        <div class="row d-flex flex-row justify-content-center ">
+            <div class="row d-flex flex-row justify-content-center ">
 
-            <div class="col-3"> <img class="photo" src="assets/images/design/illustrations/monster2.jpg"
-                    alt="illustrations de monstre fait sur illustratoir "> </div>
-            <div class="col-3"> <img class="photo" src="assets/images/design/illustrations/dinolove.jpg"
-                    alt="illustration de dinosaure fait sur illustratoir"></div>
-            <div class="col-3"> <img class="photo" src="assets/images/design/mokup.jpg" alt="premier site "></div>
-            <div class="col-3"> <img class="photo" src="assets/images/design/mokcup.jpg" alt="deuxieme site"> </div>
+                <div class="col-3"> <img class="photo" src="assets/images/design/illustrations/monster2.jpg"
+                        alt="illustrations de monstre fait sur illustratoir "> </div>
+                <div class="col-3"> <img class="photo" src="assets/images/design/illustrations/dinolove.jpg"
+                        alt="illustration de dinosaure fait sur illustratoir"></div>
+                <div class="col-3"> <img class="photo" src="assets/images/design/mokup.jpg" alt="premier site "></div>
+                <div class="col-3"> <img class="photo" src="assets/images/design/mokcup.jpg" alt="deuxieme site"> </div>
 
-        </div>
+            </div>
 
         </section>
 
-        <div class="d-flex flex-row justify-content-center pb-5 pt-5"><a href="./portfolio.html"><button type="button">Voir Plus</button></a></div>
+        <div class="d-flex flex-row justify-content-center pb-5 pt-5 "><a href="./portfolio.html"><button
+                    class="buttonPortfolio" type="button">Voir Plus</button></a></div>
 
         <!--Portfolio-->
     </main>
@@ -266,14 +288,14 @@
         </div>
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2020 Copyright: Manon Pradier
+            © 2021 Copyright: Manon Pradier
 
         </div>
         <!-- Copyright -->
     </footer>
     <!--Footer-->
 
-
+    <script src="assets/js/main.js"> </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
